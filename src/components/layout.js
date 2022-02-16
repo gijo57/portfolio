@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
-import Header from "./header"
-import Footer from "./footer"
+import Header from "./Header"
+import Footer from "./Footer"
 
 const StyledLayout = styled.div`
   width: 100%;

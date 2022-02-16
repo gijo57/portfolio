@@ -1,15 +1,22 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 
 const AboutPage = ({ data }) => {
-  const content = data.markdownRemark
-  console.log(content)
+  const {
+    frontmatter: { title, subheading },
+    rawMarkdownBody: body,
+  } = data.markdownRemark
+  const paragraphs = body.split("\n").filter(paragraph => paragraph !== "")
+
   return (
     <Layout>
-      <h1></h1>
-      <h2>jigga</h2>
+      <h1>{title}</h1>
+      <h2>{subheading}</h2>
+      {paragraphs.map((paragraph, i) => (
+        <p key={paragraph + i}>{paragraph}</p>
+      ))}
     </Layout>
   )
 }

@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Hero from "../components/Hero"
 
-const IndexPage = ({ data }) => {
+const ProjectPage = ({ data }) => {
   const content = data.markdownRemark
 
   return (
@@ -14,11 +14,11 @@ const IndexPage = ({ data }) => {
   )
 }
 
-export default IndexPage
+export default ProjectPage
 
 export const pageQuery = graphql`
-  query IndexPageQuery {
-    markdownRemark(fileAbsolutePath: { regex: "/hero.md/" }) {
+  query ProjectPageQuery {
+    markdownRemark(fileAbsolutePath: { regex: "/projects.md/" }) {
       frontmatter {
         title
         greetings
