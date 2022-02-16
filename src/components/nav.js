@@ -9,13 +9,18 @@ const NavLinks = styled.nav`
   width: 50%;
 `
 
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+`
+
 const Nav = () => {
   return (
     <NavLinks>
-      <Link to="/">Home</Link>
-      <Link to="/about">About Me</Link>
-      <Link to="/projects">Projects</Link>
-      <Link to="/contact">Contact</Link>
+      <StyledLink to="/">Home</StyledLink>
+      <StyledLink to="/about">About Me</StyledLink>
+      <StyledLink to="/projects">Projects</StyledLink>
+      <StyledLink to="/contact">Contact</StyledLink>
     </NavLinks>
   )
 }

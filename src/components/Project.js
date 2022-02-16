@@ -4,7 +4,7 @@ import styled from "styled-components"
 const Card = styled.div``
 
 const Project = () => {
-  return <div></div>
+  return <Card></Card>
 }
 
 export default Project

@@ -1,8 +1,12 @@
 import React from "react"
 import styled from "styled-components"
+import particlesOptions from "../../particles.json"
 
-import Header from "./Header"
-import Footer from "./Footer"
+import Particles from "react-tsparticles"
+import Header from "../Header"
+import Footer from "../Footer"
+
+import "./styles.css"
 
 const StyledLayout = styled.div`
   width: 100%;
@@ -22,9 +26,10 @@ const StyledLayout = styled.div`
 const Layout = ({ children }) => {
   return (
     <StyledLayout>
-      <Header />
+      <Header style={{ zIndex: 999 }} />
       <main id="main-content">{children}</main>
       <Footer />
+      <Particles className="particles" options={particlesOptions} />
     </StyledLayout>
   )
 }
