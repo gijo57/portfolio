@@ -1,9 +1,9 @@
 ---
-greetings: "Hello"
+greetings: "Hi"
 emoji: "👋"
-title: "I'm Konstantin Münster"
-subtitlePrefix: "I build and design "
-subtitleHighlight: "things for the web."
+title: "I'm Pekka Tiitinen"
+subheadingPrefix: "I build and design "
+subheadingHighlight: "things for the web."
 ---
 
-Product Manager and Freelance Web Developer. Based in Hamburg.
+I'm a Full Stack Web Developer. Based in Madrid.

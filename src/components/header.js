@@ -1,7 +1,9 @@
 import React from "react"
 
+import Nav from "../components/nav"
+
 const Header = () => {
-  return <h1>Header</h1>
+  return <Nav />
 }
 
 export default Header

@@ -13,24 +13,33 @@ const StyledSection = styled.section`
   }
 `
 
-const Hero = () => {
+const Hero = ({ content }) => {
+  const {
+    frontmatter: {
+      greetings,
+      emoji,
+      title,
+      subheadingPrefix,
+      subheadingHighlight,
+    },
+    rawMarkdownBody: body,
+  } = content
+
   return (
     <StyledSection id="hero">
       <h1 className="title">
-        Hello{" "}
+        {greetings}{" "}
         <span role="img" aria-label="emoji">
-          👋
+          {emoji}
         </span>
         <br />
-        I'm Pekka Tiitinen
+        {title}
       </h1>
       <h2 className="subtitle">
-        I design and build{" "}
-        <span className="highlighted">things for the web</span>.
+        {subheadingPrefix}{" "}
+        <span className="highlighted">{subheadingHighlight}</span>
       </h2>
-      <div className="description">
-        Product Manager and Freelance Web Developer. Based in Madrid.
-      </div>
+      <div className="description">{body}</div>
     </StyledSection>
   )
 }
