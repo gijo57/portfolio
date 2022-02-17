@@ -1,15 +1,25 @@
 import React from "react"
 import { graphql } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/Layout"
-import Hero from "../components/Hero"
+import Project from "../components/Project"
+
+const ProjectList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`
 
 const ProjectPage = ({ data }) => {
-  const content = data.markdownRemark
+  const { projects } = data.markdownRemark.frontmatter
 
   return (
     <Layout>
-      <Hero content={content} />
+      <ProjectList>
+        {projects.map(project => (
+          <Project key={project.url} project={project} />
+        ))}
+      </ProjectList>
     </Layout>
   )
 }
@@ -20,11 +30,11 @@ export const pageQuery = graphql`
   query ProjectPageQuery {
     markdownRemark(fileAbsolutePath: { regex: "/projects.md/" }) {
       frontmatter {
-        title
-        greetings
-        emoji
-        subheadingPrefix
-        subheadingHighlight
+        projects {
+          url
+          name
+          description
+        }
       }
       rawMarkdownBody
     }

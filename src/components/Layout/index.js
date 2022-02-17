@@ -26,7 +26,7 @@ const StyledLayout = styled.div`
 const Layout = ({ children }) => {
   return (
     <StyledLayout>
-      <Header style={{ zIndex: 999 }} />
+      <Header />
       <main id="main-content">{children}</main>
       <Footer />
       <Particles className="particles" options={particlesOptions} />
