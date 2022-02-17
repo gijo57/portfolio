@@ -32,7 +32,9 @@ export const pageQuery = graphql`
       frontmatter {
         projects {
           url
+          sourcecode
           name
+          technologies
           description
         }
       }
