@@ -11,6 +11,7 @@ const NavLinks = styled.nav`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
+  color: white;
 `
 
 const Nav = () => {
