@@ -4,7 +4,8 @@ import styled from "styled-components"
 import Nav from "./Nav"
 
 const HeaderWrapper = styled.div`
-  background-color: rgba(80, 166, 215, 0.5);
+  background: #010f1c;
+  opacity: 0.7;
   padding: 2em;
   display: flex;
   justify-content: flex-end;

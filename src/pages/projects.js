@@ -15,6 +15,7 @@ const ProjectPage = ({ data }) => {
 
   return (
     <Layout>
+      <h1>My Projects</h1>
       <ProjectList>
         {projects.map(project => (
           <Project key={project.url} project={project} />

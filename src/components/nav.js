@@ -12,15 +12,19 @@ const NavLinks = styled.nav`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: white;
+
+  &:hover {
+    color: #50a6d7;
+  }
 `
 
 const Nav = () => {
   return (
     <NavLinks>
-      <StyledLink to="/">Home</StyledLink>
-      <StyledLink to="/about">About Me</StyledLink>
-      <StyledLink to="/projects">Projects</StyledLink>
-      <StyledLink to="/contact">Contact</StyledLink>
+      <StyledLink to="/">HOME</StyledLink>
+      <StyledLink to="/about">ABOUT ME</StyledLink>
+      <StyledLink to="/projects">PROJECTS</StyledLink>
+      <StyledLink to="/contact">CONTACT</StyledLink>
     </NavLinks>
   )
 }

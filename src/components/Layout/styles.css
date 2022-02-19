@@ -12,7 +12,7 @@ body {
 }
 
 body {
-  background-color: #010f1c;
+  background-color: #0b1828;
 }
 
 h1 {
@@ -21,4 +21,19 @@ h1 {
 
 .particles {
   z-index: -1;
+}
+
+button {
+  color: #50a6d7;
+  width: 15em;
+  padding: 0.5em;
+  border: 1px solid #50a6d7;
+  background-color: rgba(1, 15, 28, 0.7);
+  border-radius: 0.3em;
+}
+
+button:hover {
+  color: rgb(1, 15, 28);
+  background-color: #50a6d7;
+  cursor: pointer;
 }
