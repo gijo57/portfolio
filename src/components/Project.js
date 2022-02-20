@@ -4,11 +4,13 @@ import styled from "styled-components"
 const Card = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: rgba(1, 15, 28, 0.7);
+  background-color: #0b1828;
+  opacity: 0.7;
   width: 30%;
   padding: 2em;
   margin: 1em;
   border-radius: 0.3em;
+  box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.5);
 `
 
 const LinkButton = styled.a`
