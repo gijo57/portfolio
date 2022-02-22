@@ -35,7 +35,10 @@ const Project = ({ project }) => {
     <Card>
       <h2>{project.name}</h2>
       <LinkButton href={project.url} target="_blank">
-        See Project
+        Live Project
+      </LinkButton>
+      <LinkButton href={project.sourcecode} target="_blank">
+        Source Code
       </LinkButton>
     </Card>
   )
